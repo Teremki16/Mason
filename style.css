@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgb(218, 203, 203); */
+  background-image: url(https://images.unian.net/photos/2018_10/thumb_files/1200_0_1539000430-1826.JPG);
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  color: white;
+}
+
+
+
+#pole {
+  width: 80%;
+}
+
+.note {
+  border: 1px solid;
+  border-radius: 10px;
+  color: white;
+}
+
+.note i {
+  color: white;
+  border-color: white;
+}
+
+.note button {
+  border-color: rgb(147, 137, 137);
+  border-radius: 5px;
+  width: 100px;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column-reverse;
+  color: white;
+}
+
+.add button {
+  color: white;
+  border-color: white;
+}
+
+.add #pole {
+  border-color: white;
+  color: white;
+}
+
+.add #addNotatkaPole {
+  border-color: white;
+  color: white;
+  
+}
+
+
+  
+  
+
+
+
+
+
