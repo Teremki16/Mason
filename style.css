@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   /* background-color: rgb(218, 203, 203); */
+
+}
+
+body {
   background-image: url(https://images.unian.net/photos/2018_10/thumb_files/1200_0_1539000430-1826.JPG);
 }
 
@@ -14,16 +18,10 @@ h1 {
   color: white;
 }
 
-
-
-#pole {
-  width: 80%;
-}
-
 .note {
   border: 1px solid;
-  border-radius: 10px;
-  color: white;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
 }
 
 .note i {
@@ -32,7 +30,8 @@ h1 {
 }
 
 .note button {
-  border-color: rgb(147, 137, 137);
+  border-color: rgb(217, 217, 217);
+  background-color: rgb(98, 142, 75);
   border-radius: 5px;
   width: 100px;
   align-items: center;
@@ -54,14 +53,63 @@ h1 {
 .add #addNotatkaPole {
   border-color: white;
   color: white;
-  
+}
+
+.add {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  align-items: stretch;
+  gap: 5px;
+}
+
+.add input {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.add textarea {
+  padding: 10px;
+  border-radius: 50px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.note.true {
+  /* background-color: rgb(145, 145, 145); */
+  color: rgb(152, 178, 145);
+  text-decoration: line-through;
+}
+
+.btns {
+  display: flex;
+  gap: 5px;
+  background-color: transparent;
+}
+
+#add {
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+.btns button {
+  padding: 0 0 100px;
+  border-radius: 10px;
+  padding: 35px;
+  background-color: transparent;
 }
 
 
-  
-  
+.note.true button {
+  color: brown;
+  background-color: rgb(70, 102, 52) !important;
+  border-color: rgb(155, 155, 155);
+}
 
-
-
-
-
+.notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  background-color: transparent;
+}

@@ -10,7 +10,7 @@
     integrity='sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ=='
     crossorigin='anonymous' />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <title>Document</title>
 </head>
 
@@ -18,10 +18,12 @@
 
   <h1>To do list</h1>
   <div class="add">
-    <input type="text" id="addNotatkaPole" placeholder="Додайте заголовок">
-    <textarea name="" id="pole" placeholder="Додайте нотатку"></textarea>
-    <button id="add"><i class="fa-solid fa-plus"></i></button>
-    <button>Clear list</button>
+    <input type="text" id="addNotatkaPole" placeholder="Add text">
+    <textarea name="" id="pole" placeholder="Add title"></textarea>
+    <div class="btns">
+      <button id="add"><i class="fa-solid fa-plus"></i></button>
+      <button id="clear">Clear list</button>
+    </div>
   </div>
 
   <div class="notes">
