@@ -1,3 +1,7 @@
+@font-face {
+  font-family: lesbian;
+  src: url(PlayfairDisplay-VariableFont_wght.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +12,8 @@
 
 body {
   background-image: url(https://images.unian.net/photos/2018_10/thumb_files/1200_0_1539000430-1826.JPG);
+  background-size: cover;
+  margin: auto;
 }
 
 h1 {
@@ -22,6 +28,11 @@ h1 {
   border: 1px solid;
   border-radius: 5px;
   color: rgb(255, 255, 255);
+  margin: 10px;
+  padding: 9px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
 }
 
 .note i {
@@ -87,6 +98,7 @@ h1 {
   display: flex;
   gap: 5px;
   background-color: transparent;
+  
 }
 
 #add {
@@ -99,6 +111,7 @@ h1 {
   border-radius: 10px;
   padding: 35px;
   background-color: transparent;
+
 }
 
 
@@ -112,4 +125,91 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   background-color: transparent;
+}
+
+.redag {
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.block {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  border: 1px solid darkgreen;
+  border-radius: 5px;
+  border-color: rgb(70, 102, 52);
+  color: rgb(152, 178, 145);
+  padding: 5px;
+}
+
+.block textarea{
+  width: 300px;
+  border-radius: 3px;
+  border-color: rgb(70, 102, 52);
+  background-color: rgb(152, 178, 145);
+  
+}
+
+#addInput {
+  width: 300px;
+  border: 5px;
+  border-radius: 3px;
+  height: 22px;
+  border-color: rgb(70, 102, 52);
+  background-color: rgb(152, 178, 145);
+}
+
+#addInput::placeholder{
+  text-align: center;
+  color: rgb(73, 73, 73);
+}
+
+#addText::placeholder {
+  text-align: center;
+  color: rgb(73, 73, 73);
+}
+
+#save {
+   background-color: rgb(129, 158, 137);
+}
+
+#close {
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(164, 164, 164, 0.563);
+  font-size: 30px;
+}
+
+#addNotatkaPole::placeholder {
+  text-align: center;
+}
+
+#pole::placeholder {
+  text-align: center;
+}
+
+.smth4u {
+ display: flex;
+}
+
+.zagal {
+  font-weight: 600;
+  font-size: large;
+  font-family: lesbian;
+  
+}
+
+.Text {
+  gap: 50px;
 }
