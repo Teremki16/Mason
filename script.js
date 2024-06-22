@@ -21,7 +21,7 @@ if ($("#addNotatkaPole").val() != "" && $("#pole").val() != "") {
     draw()
   }
   else{
-    alert("Заповніть всі поля!")
+    alertify.error("Заповніть всі поля!");
   }
   })
   
@@ -66,8 +66,11 @@ if ($("#addNotatkaPole").val() != "" && $("#pole").val() != "") {
   }
   
   $("#clear").on("click", function(){
-    Notes = [];
-    draw();
+    let Confirm = confirm("Ви впевнені, що хочете все очистити?");
+    if (Confirm) {
+      Notes = [];
+      draw();
+    }
   })
   
   

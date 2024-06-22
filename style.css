@@ -2,6 +2,7 @@
   font-family: lesbian;
   src: url(PlayfairDisplay-VariableFont_wght.ttf);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +26,7 @@ h1 {
 }
 
 .note {
+  display: flex;
   border: 1px solid;
   border-radius: 5px;
   color: rgb(255, 255, 255);
@@ -32,7 +34,8 @@ h1 {
   padding: 9px;
   text-align: center;
   overflow: hidden;
-  display: flex;
+  backdrop-filter: blur(4px);
+  flex-direction: column;
 }
 
 .note i {
@@ -43,7 +46,7 @@ h1 {
 .note button {
   border-color: rgb(217, 217, 217);
   background-color: rgb(98, 142, 75);
-  border-radius: 5px;
+  border-radius: 45px;
   width: 100px;
   align-items: center;
   justify-self: center;
@@ -56,20 +59,22 @@ h1 {
   border-color: white;
 }
 
-.add #pole {
+.add #pole, .add #addNotatkaPole{
   border-color: white;
   color: white;
+  background-color:rgb(20, 21, 31)  ;
 }
 
-.add #addNotatkaPole {
-  border-color: white;
-  color: white;
+#addNotatkaPole:focus, #pole:focus {
+  border-color: rgb(181, 218, 171);
+  border-width: 3px;
+  
 }
 
 .add {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
   align-items: stretch;
   gap: 5px;
@@ -77,13 +82,13 @@ h1 {
 
 .add input {
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 45px;
   background-color: transparent;
 }
 
 .add textarea {
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 45px;
   width: 100%;
   background-color: transparent;
 }
@@ -96,22 +101,24 @@ h1 {
 
 .btns {
   display: flex;
-  gap: 5px;
-  background-color: transparent;
-  
+  gap: 3px;
 }
 
-#add {
+#add{
+  background-color:rgb(33, 33, 33) ;
+  font-size: 25px;
   flex-grow: 1;
-  background-color: transparent;
+}
+
+#clear {
+  background-color:rgb(33, 33, 33) ;
 }
 
 .btns button {
-  padding: 0 0 100px;
-  border-radius: 10px;
-  padding: 35px;
+  padding: 100px;
+  border-radius: 45px;
+  padding: 25px;
   background-color: transparent;
-
 }
 
 
@@ -123,7 +130,7 @@ h1 {
 
 .notes {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   background-color: transparent;
 }
 
@@ -139,7 +146,7 @@ h1 {
 
 .block {
   display: flex;
-  gap: 5px;
+  gap: 15px;
   flex-direction: column;
   border: 1px solid darkgreen;
   border-radius: 5px;
@@ -201,15 +208,57 @@ h1 {
 
 .smth4u {
  display: flex;
+ justify-content: space-between;
+ height: 35px;
+}
+
+.smth4u button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .zagal {
   font-weight: 600;
-  font-size: large;
+  font-size: 30px;
   font-family: lesbian;
-  
+  text-decoration: underline;
+  margin-top: 15px;
+
+}
+
+.notatka {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: lesbian;
+
 }
 
 .Text {
-  gap: 50px;
+  gap: 10px;
 }
+
+.date {
+  position: relative;
+  bottom: 60%;
+  left: 32%;
+}
+
+#add:hover, #clear:hover {
+  background-color: rgb(18, 18, 18);
+}
+
+
+
+.note button:hover {
+  background-color: rgb(60, 88, 45);
+  border-color: #c0bfbf;
+  color: #2a2929;
+  transition: all 0.5s;
+}
+
+/* .add {
+  background-color:rgb(20, 21, 31)  ;  
+  border-radius: 32px;
+} */
+
