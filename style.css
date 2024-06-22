@@ -36,6 +36,7 @@ h1 {
   overflow: hidden;
   backdrop-filter: blur(4px);
   flex-direction: column;
+  z-index: 0;
 }
 
 .note i {
@@ -142,6 +143,7 @@ h1 {
   align-items: center;
   justify-content: center;
   display: none;
+  z-index: 999;
 }
 
 .block {
